@@ -11,7 +11,8 @@ import {
     UserGreeting,
     UserInfo,
     UserName,
-    UserWrapper
+    UserWrapper,
+    HighlighCards
 } from './styles';
 
 export function Dashboard() {
@@ -31,7 +32,11 @@ export function Dashboard() {
                 </UserWrapper>
             </Header>
 
-            <HighlighCard />
+            <HighlighCards>
+                <HighlighCard />
+                <HighlighCard />
+                <HighlighCard />
+            </HighlighCards>
         </Container>
     )
 }
