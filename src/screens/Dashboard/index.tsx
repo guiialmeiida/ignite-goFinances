@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { HighlighCard } from '../../components/HighlighCard';
+
 import {
     Container,
     Header,
@@ -27,6 +30,8 @@ export function Dashboard() {
                     <Icon name="power" />
                 </UserWrapper>
             </Header>
+
+            <HighlighCard />
         </Container>
     )
 }
