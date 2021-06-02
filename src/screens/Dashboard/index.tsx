@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { HighlighCard } from '../../components/HighlighCard';
+import { TransactionCard } from '../../components/TransactionCard';
 
 import {
     Container,
@@ -12,7 +13,9 @@ import {
     UserInfo,
     UserName,
     UserWrapper,
-    HighlighCards
+    HighlighCards,
+    Transactions,
+    Title,
 } from './styles';
 
 export function Dashboard() {
@@ -33,6 +36,7 @@ export function Dashboard() {
             </Header>
 
             <HighlighCards>
+
                 <HighlighCard
                     type="up"
                     title="Entradas"
@@ -52,6 +56,12 @@ export function Dashboard() {
                     lastTransaction="1 à 16 de abril"
                 />
             </HighlighCards>
+
+            <Transactions>
+                <Title>Listagem</Title>
+
+                <TransactionCard />
+            </Transactions>
         </Container>
     )
 }
